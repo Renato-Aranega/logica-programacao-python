@@ -22,9 +22,10 @@ print(soma)
 
 # Procurando valor na matriz
 while True:
-    achou = float(input("Digite um valor: "))
-    if achou == True:
-        print(f"Valor {achou} localizado!")
+    valor_busca = int(input("Digite um valor: "))
+    encontrado = any(valor_busca in linha for linha in matrizes)
+    if encontrado:
+        print(f"Valor {valor_busca} localizado!")
         break
     else:
         print("Valor não encontrado")

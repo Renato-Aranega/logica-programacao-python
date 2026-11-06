@@ -27,7 +27,7 @@ def pesquisa(nome):
     for d, e in enumerate(agenda):
         if e[0].lower() == name:
             return d
-        return None
+    return None
     
 def pesquisar():
     p = pesquisa(p_nome())
